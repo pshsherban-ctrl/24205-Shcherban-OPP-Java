@@ -1,0 +1,26 @@
+апр. 07, 2026 5:19:11 PM com.game.GameEngine generateSecret
+INFO: Сгенерировано секретное число: 371
+апр. 07, 2026 5:19:14 PM com.game.GameEngine calculateResult
+INFO: Попытка: 111 -> Результат: 1 быков, 2 коров
+апр. 07, 2026 5:19:18 PM com.game.GameEngine calculateResult
+INFO: Попытка: 111 -> Результат: 1 быков, 2 коров
+апр. 07, 2026 5:19:20 PM com.game.GameEngine calculateResult
+INFO: Попытка: 111 -> Результат: 1 быков, 2 коров
+апр. 07, 2026 5:19:21 PM com.game.GameEngine calculateResult
+INFO: Попытка: 111 -> Результат: 1 быков, 2 коров
+апр. 07, 2026 5:19:22 PM com.game.GameEngine calculateResult
+INFO: Попытка: 111 -> Результат: 1 быков, 2 коров
+апр. 07, 2026 5:19:28 PM com.game.GameEngine calculateResult
+INFO: Попытка: 123 -> Результат: 0 быков, 2 коров
+апр. 07, 2026 5:19:37 PM com.game.GameEngine calculateResult
+INFO: Попытка: 214 -> Результат: 0 быков, 1 коров
+апр. 07, 2026 5:19:45 PM com.game.GameEngine calculateResult
+INFO: Попытка: 315 -> Результат: 1 быков, 1 коров
+апр. 07, 2026 5:20:02 PM com.game.GameEngine calculateResult
+INFO: Попытка: 168 -> Результат: 0 быков, 1 коров
+апр. 07, 2026 5:20:10 PM com.game.GameEngine calculateResult
+INFO: Попытка: 391 -> Результат: 2 быков, 0 коров
+апр. 07, 2026 5:24:18 PM com.game.GameEngine calculateResult
+INFO: Попытка: 1354 -> Результат: 2 быков, 1 коров
+апр. 07, 2026 5:24:18 PM com.game.GameEngine calculateResult
+INFO: Попытка: 5678 -> Результат: 4 быков, 0 коров
