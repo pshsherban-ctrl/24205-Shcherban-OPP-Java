@@ -1,0 +1,66 @@
+мар. 31, 2026 4:54:45 PM com.game.GameEngine generateSecret
+INFO: Сгенерировано секретное число: 825637
+мар. 31, 2026 4:54:53 PM com.game.GameEngine calculateResult
+INFO: Попытка: 123456 -> Результат: 1 быков, 3 коров
+мар. 31, 2026 4:55:08 PM com.game.GameEngine calculateResult
+INFO: Попытка: 123789 -> Результат: 1 быков, 3 коров
+мар. 31, 2026 4:55:19 PM com.game.GameEngine calculateResult
+INFO: Попытка: 124578 -> Результат: 1 быков, 3 коров
+мар. 31, 2026 4:55:29 PM com.game.GameEngine calculateResult
+INFO: Попытка: 136936 -> Результат: 1 быков, 3 коров
+мар. 31, 2026 4:55:35 PM com.game.GameEngine calculateResult
+INFO: Попытка: 133333 -> Результат: 1 быков, 4 коров
+мар. 31, 2026 4:56:01 PM com.game.GameEngine calculateResult
+INFO: Попытка: 011111 -> Результат: 0 быков, 0 коров
+мар. 31, 2026 4:56:14 PM com.game.GameEngine calculateResult
+INFO: Попытка: 111111 -> Результат: 0 быков, 0 коров
+мар. 31, 2026 4:56:17 PM com.game.GameEngine calculateResult
+INFO: Попытка: 222222 -> Результат: 1 быков, 5 коров
+мар. 31, 2026 4:56:24 PM com.game.GameEngine calculateResult
+INFO: Попытка: 333333 -> Результат: 1 быков, 5 коров
+мар. 31, 2026 4:56:31 PM com.game.GameEngine calculateResult
+INFO: Попытка: 444444 -> Результат: 0 быков, 0 коров
+мар. 31, 2026 5:04:53 PM com.game.GameEngine calculateResult
+INFO: Попытка: 1354 -> Результат: 2 быков, 1 коров
+мар. 31, 2026 5:04:53 PM com.game.GameEngine calculateResult
+INFO: Попытка: 5678 -> Результат: 4 быков, 0 коров
+мар. 31, 2026 5:05:05 PM com.game.GameEngine calculateResult
+INFO: Попытка: 1354 -> Результат: 2 быков, 1 коров
+мар. 31, 2026 5:05:05 PM com.game.GameEngine calculateResult
+INFO: Попытка: 5678 -> Результат: 4 быков, 0 коров
+мар. 31, 2026 5:05:22 PM com.game.GameEngine calculateResult
+INFO: Попытка: 1354 -> Результат: 2 быков, 1 коров
+мар. 31, 2026 5:05:23 PM com.game.GameEngine calculateResult
+INFO: Попытка: 5678 -> Результат: 4 быков, 0 коров
+мар. 31, 2026 5:05:42 PM com.game.GameEngine generateSecret
+INFO: Сгенерировано секретное число: 046
+мар. 31, 2026 5:05:49 PM com.game.GameEngine calculateResult
+INFO: Попытка: 123 -> Результат: 0 быков, 0 коров
+мар. 31, 2026 5:05:52 PM com.game.GameEngine calculateResult
+INFO: Попытка: 456 -> Результат: 1 быков, 1 коров
+мар. 31, 2026 5:05:56 PM com.game.GameEngine calculateResult
+INFO: Попытка: 789 -> Результат: 0 быков, 0 коров
+мар. 31, 2026 5:06:02 PM com.game.GameEngine calculateResult
+INFO: Попытка: 444 -> Результат: 1 быков, 2 коров
+мар. 31, 2026 5:06:07 PM com.game.GameEngine calculateResult
+INFO: Попытка: 454 -> Результат: 0 быков, 2 коров
+мар. 31, 2026 5:06:14 PM com.game.GameEngine calculateResult
+INFO: Попытка: 544 -> Результат: 1 быков, 1 коров
+мар. 31, 2026 5:06:24 PM com.game.GameEngine calculateResult
+INFO: Попытка: 645 -> Результат: 1 быков, 1 коров
+мар. 31, 2026 5:06:31 PM com.game.GameEngine calculateResult
+INFO: Попытка: 611 -> Результат: 0 быков, 1 коров
+мар. 31, 2026 5:06:36 PM com.game.GameEngine calculateResult
+INFO: Попытка: 161 -> Результат: 0 быков, 1 коров
+мар. 31, 2026 5:06:40 PM com.game.GameEngine calculateResult
+INFO: Попытка: 666 -> Результат: 1 быков, 2 коров
+мар. 31, 2026 5:06:49 PM com.game.GameEngine generateSecret
+INFO: Сгенерировано секретное число: 260
+мар. 31, 2026 5:07:05 PM com.game.GameEngine calculateResult
+INFO: Попытка: 230 -> Результат: 2 быков, 0 коров
+мар. 31, 2026 5:07:10 PM com.game.GameEngine calculateResult
+INFO: Попытка: 260 -> Результат: 3 быков, 0 коров
+мар. 31, 2026 5:12:49 PM com.game.GameEngine generateSecret
+INFO: Сгенерировано секретное число: 964
+мар. 31, 2026 5:12:58 PM com.game.GameEngine calculateResult
+INFO: Попытка: 333 -> Результат: 0 быков, 0 коров
