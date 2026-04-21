@@ -1,0 +1,146 @@
+апр. 07, 2026 5:19:11 PM com.game.GameEngine generateSecret
+INFO: Сгенерировано секретное число: 371
+апр. 07, 2026 5:19:14 PM com.game.GameEngine calculateResult
+INFO: Попытка: 111 -> Результат: 1 быков, 2 коров
+апр. 07, 2026 5:19:18 PM com.game.GameEngine calculateResult
+INFO: Попытка: 111 -> Результат: 1 быков, 2 коров
+апр. 07, 2026 5:19:20 PM com.game.GameEngine calculateResult
+INFO: Попытка: 111 -> Результат: 1 быков, 2 коров
+апр. 07, 2026 5:19:21 PM com.game.GameEngine calculateResult
+INFO: Попытка: 111 -> Результат: 1 быков, 2 коров
+апр. 07, 2026 5:19:22 PM com.game.GameEngine calculateResult
+INFO: Попытка: 111 -> Результат: 1 быков, 2 коров
+апр. 07, 2026 5:19:28 PM com.game.GameEngine calculateResult
+INFO: Попытка: 123 -> Результат: 0 быков, 2 коров
+апр. 07, 2026 5:19:37 PM com.game.GameEngine calculateResult
+INFO: Попытка: 214 -> Результат: 0 быков, 1 коров
+апр. 07, 2026 5:19:45 PM com.game.GameEngine calculateResult
+INFO: Попытка: 315 -> Результат: 1 быков, 1 коров
+апр. 07, 2026 5:20:02 PM com.game.GameEngine calculateResult
+INFO: Попытка: 168 -> Результат: 0 быков, 1 коров
+апр. 07, 2026 5:20:10 PM com.game.GameEngine calculateResult
+INFO: Попытка: 391 -> Результат: 2 быков, 0 коров
+апр. 07, 2026 5:24:18 PM com.game.GameEngine calculateResult
+INFO: Попытка: 1354 -> Результат: 2 быков, 1 коров
+апр. 07, 2026 5:24:18 PM com.game.GameEngine calculateResult
+INFO: Попытка: 5678 -> Результат: 4 быков, 0 коров
+апр. 07, 2026 5:26:23 PM com.game.GameEngine generateSecret
+INFO: Сгенерировано секретное число: 723
+апр. 07, 2026 5:26:24 PM com.game.GameEngine calculateResult
+INFO: Попытка: 999 -> Результат: 0 быков, 0 коров
+апр. 07, 2026 5:26:25 PM com.game.GameEngine calculateResult
+INFO: Попытка: 999 -> Результат: 0 быков, 0 коров
+апр. 07, 2026 5:26:26 PM com.game.GameEngine calculateResult
+INFO: Попытка: 999 -> Результат: 0 быков, 0 коров
+апр. 07, 2026 5:26:29 PM com.game.GameEngine calculateResult
+INFO: Попытка: 723 -> Результат: 3 быков, 0 коров
+апр. 07, 2026 5:26:37 PM com.game.GameEngine calculateResult
+INFO: Попытка: 1354 -> Результат: 2 быков, 1 коров
+апр. 07, 2026 5:26:37 PM com.game.GameEngine calculateResult
+INFO: Попытка: 5678 -> Результат: 4 быков, 0 коров
+апр. 07, 2026 5:34:25 PM com.game.GameEngine generateSecret
+INFO: Сгенерировано секретное число: 967
+апр. 07, 2026 5:35:46 PM com.game.GameEngine calculateResult
+INFO: Попытка: 555 -> Результат: 0 быков, 0 коров
+апр. 07, 2026 5:35:46 PM com.game.GameEngine calculateResult
+INFO: Попытка: 555 -> Результат: 0 быков, 0 коров
+апр. 07, 2026 5:35:47 PM com.game.GameEngine calculateResult
+INFO: Попытка: 555 -> Результат: 0 быков, 0 коров
+апр. 07, 2026 5:35:48 PM com.game.GameEngine calculateResult
+INFO: Попытка: 555 -> Результат: 0 быков, 0 коров
+апр. 07, 2026 5:35:49 PM com.game.GameEngine calculateResult
+INFO: Попытка: 555 -> Результат: 0 быков, 0 коров
+апр. 07, 2026 5:35:50 PM com.game.GameEngine calculateResult
+INFO: Попытка: 555 -> Результат: 0 быков, 0 коров
+апр. 07, 2026 5:35:50 PM com.game.GameEngine calculateResult
+INFO: Попытка: 555 -> Результат: 0 быков, 0 коров
+апр. 07, 2026 5:35:51 PM com.game.GameEngine calculateResult
+INFO: Попытка: 555 -> Результат: 0 быков, 0 коров
+апр. 21, 2026 2:47:37 PM com.game.GameEngine calculateResult
+INFO: Попытка: 1354 -> Результат: 2 быков, 1 коров
+апр. 21, 2026 2:47:37 PM com.game.GameEngine calculateResult
+INFO: Попытка: 5678 -> Результат: 4 быков, 0 коров
+апр. 21, 2026 2:49:46 PM com.game.GameEngine calculateResult
+INFO: Попытка: 1354 -> Результат: 2 быков, 1 коров
+апр. 21, 2026 2:49:46 PM com.game.GameEngine calculateResult
+INFO: Попытка: 5678 -> Результат: 4 быков, 0 коров
+апр. 21, 2026 2:49:58 PM com.game.GameEngine generateSecret
+INFO: Сгенерировано секретное число: 248
+апр. 21, 2026 2:50:05 PM com.game.GameEngine calculateResult
+INFO: Попытка: 248 -> Результат: 3 быков, 0 коров
+апр. 21, 2026 2:56:33 PM com.game.GameEngine calculateResult
+INFO: Попытка: 1354 -> Результат: 2 быков, 1 коров
+апр. 21, 2026 2:56:33 PM com.game.GameEngine calculateResult
+INFO: Попытка: 5678 -> Результат: 4 быков, 0 коров
+2026-04-21 15:14:09 [main] DEBUG com.game.GameEngine - Сгенерирован секрет: 806
+2026-04-21 15:14:09 [main] INFO  com.game.Main - Начало новой сессии. Длина: 3, Лимит попыток: 10
+2026-04-21 15:14:16 [main] INFO  com.game.GameEngine - Попытка игрока: 111 | Результат: 0Б 0К
+2026-04-21 15:14:20 [main] INFO  com.game.GameEngine - Попытка игрока: 234 | Результат: 0Б 0К
+2026-04-21 15:14:23 [main] INFO  com.game.GameEngine - Попытка игрока: 567 | Результат: 0Б 1К
+2026-04-21 15:14:32 [main] INFO  com.game.GameEngine - Попытка игрока: 000 | Результат: 1Б 2К
+2026-04-21 15:14:39 [main] INFO  com.game.GameEngine - Попытка игрока: 987 | Результат: 0Б 1К
+2026-04-21 15:14:43 [main] INFO  com.game.GameEngine - Попытка игрока: 569 | Результат: 0Б 1К
+2026-04-21 15:14:51 [main] INFO  com.game.GameEngine - Попытка игрока: 568 | Результат: 0Б 2К
+2026-04-21 15:15:03 [main] INFO  com.game.GameEngine - Попытка игрока: 860 | Результат: 1Б 2К
+2026-04-21 15:15:10 [main] INFO  com.game.GameEngine - Попытка игрока: 990 | Результат: 0Б 1К
+2026-04-21 15:15:20 [main] INFO  com.game.GameEngine - Попытка игрока: 805 | Результат: 2Б 0К
+2026-04-21 15:15:20 [main] INFO  com.game.Main - ПРОИГРЫШ. Попытки исчерпаны. Было задумано: 806
+2026-04-21 16:15:53 [main] DEBUG com.game.GameEngine - Сгенерирован секрет: 507
+2026-04-21 16:15:53 [main] INFO  com.game.Main - Начало новой сессии. Длина: 3, Лимит попыток: 10
+2026-04-21 16:16:01 [main] INFO  com.game.GameEngine - Попытка игрока: 123 | Результат: 0Б 0К
+2026-04-21 16:16:03 [main] INFO  com.game.GameEngine - Попытка игрока: 456 | Результат: 0Б 1К
+2026-04-21 16:16:12 [main] INFO  com.game.GameEngine - Попытка игрока: 806 | Результат: 1Б 0К
+2026-04-21 16:16:21 [main] INFO  com.game.GameEngine - Попытка игрока: 600 | Результат: 1Б 1К
+2026-04-21 16:16:41 [main] INFO  com.game.GameEngine - Попытка игрока: 005 | Результат: 1Б 2К
+2026-04-21 16:16:50 [main] INFO  com.game.GameEngine - Попытка игрока: 407 | Результат: 2Б 0К
+2026-04-21 16:16:54 [main] INFO  com.game.GameEngine - Попытка игрока: 408 | Результат: 1Б 0К
+2026-04-21 16:16:56 [main] INFO  com.game.GameEngine - Попытка игрока: 409 | Результат: 1Б 0К
+2026-04-21 16:17:28 [main] WARN  com.game.Main - Попытка отклонена: превышен лимит времени (31 сек)
+2026-04-21 16:17:33 [main] INFO  com.game.GameEngine - Попытка игрока: 507 | Результат: 3Б 0К
+2026-04-21 16:17:33 [main] INFO  com.game.Main - ПОБЕДА! Число угадано за 10 попыток.
+2026-04-21 16:20:56 [main] DEBUG com.game.GameEngine - Сгенерирован секрет: 764
+2026-04-21 16:20:56 [main] INFO  com.game.Main - Начало новой сессии. Длина: 3, Лимит попыток: 10
+2026-04-21 16:21:14 [main] INFO  com.game.GameEngine - Попытка игрока: 764 | Результат: 3Б 0К
+2026-04-21 16:21:14 [main] INFO  com.game.Main - ПОБЕДА! Число угадано за 1 попыток.
+2026-04-21 16:30:35 [main] DEBUG com.game.GameEngine - Сгенерирован секрет: 367
+2026-04-21 16:30:35 [main] INFO  com.game.Main - Начало новой сессии. Длина: 3, Лимит попыток: 10
+2026-04-21 16:30:42 [main] INFO  com.game.GameEngine - Попытка игрока: 012 | Результат: 0Б 0К
+2026-04-21 16:30:45 [main] INFO  com.game.GameEngine - Попытка игрока: 345 | Результат: 1Б 0К
+2026-04-21 16:30:51 [main] INFO  com.game.GameEngine - Попытка игрока: 454 | Результат: 0Б 0К
+2026-04-21 16:30:59 [main] INFO  com.game.GameEngine - Попытка игрока: 678 | Результат: 0Б 2К
+2026-04-21 16:31:02 [main] INFO  com.game.GameEngine - Попытка игрока: 999 | Результат: 0Б 0К
+2026-04-21 16:31:07 [main] INFO  com.game.GameEngine - Попытка игрока: 666 | Результат: 1Б 2К
+2026-04-21 16:31:15 [main] INFO  com.game.GameEngine - Попытка игрока: 777 | Результат: 1Б 2К
+2026-04-21 16:31:25 [main] INFO  com.game.GameEngine - Попытка игрока: 673 | Результат: 0Б 3К
+2026-04-21 16:31:36 [main] INFO  com.game.GameEngine - Попытка игрока: 736 | Результат: 0Б 3К
+2026-04-21 16:32:01 [main] WARN  com.game.Main - Попытка отклонена: превышен лимит времени (24 сек)
+2026-04-21 16:32:01 [main] INFO  com.game.Main - ПРОИГРЫШ. Попытки исчерпаны. Было задумано: 367
+2026-04-21 16:32:11 [main] DEBUG com.game.GameEngine - Сгенерирован секрет: 867
+2026-04-21 16:32:11 [main] INFO  com.game.Main - Начало новой сессии. Длина: 3, Лимит попыток: 10
+2026-04-21 16:32:14 [main] INFO  com.game.GameEngine - Попытка игрока: 012 | Результат: 0Б 0К
+2026-04-21 16:32:16 [main] INFO  com.game.GameEngine - Попытка игрока: 345 | Результат: 0Б 0К
+2026-04-21 16:32:19 [main] INFO  com.game.GameEngine - Попытка игрока: 678 | Результат: 0Б 3К
+2026-04-21 16:32:22 [main] INFO  com.game.GameEngine - Попытка игрока: 999 | Результат: 0Б 0К
+2026-04-21 16:32:29 [main] INFO  com.game.GameEngine - Попытка игрока: 867 | Результат: 3Б 0К
+2026-04-21 16:32:29 [main] INFO  com.game.Main - ПОБЕДА! Число угадано за 5 попыток.
+2026-04-21 16:35:04 [main] DEBUG com.game.GameEngine - Сгенерирован секрет: 3925
+2026-04-21 16:35:04 [main] INFO  com.game.GameEngine - Попытка игрока: 9325 | Результат: 2Б 2К
+2026-04-21 16:35:04 [main] DEBUG com.game.GameEngine - Сгенерирован секрет: 3068
+2026-04-21 16:35:04 [main] INFO  com.game.GameEngine - Попытка игрока: 3068 | Результат: 4Б 0К
+2026-04-21 16:35:14 [main] DEBUG com.game.GameEngine - Сгенерирован секрет: 7394
+2026-04-21 16:35:14 [main] INFO  com.game.GameEngine - Попытка игрока: 3794 | Результат: 2Б 2К
+2026-04-21 16:35:14 [main] DEBUG com.game.GameEngine - Сгенерирован секрет: 0213
+2026-04-21 16:35:14 [main] INFO  com.game.GameEngine - Попытка игрока: 0213 | Результат: 4Б 0К
+2026-04-21 16:35:20 [main] DEBUG com.game.GameEngine - Сгенерирован секрет: 956
+2026-04-21 16:35:20 [main] INFO  com.game.Main - Начало новой сессии. Длина: 3, Лимит попыток: 10
+2026-04-21 16:35:22 [main] INFO  com.game.GameEngine - Попытка игрока: 333 | Результат: 0Б 0К
+2026-04-21 16:35:23 [main] INFO  com.game.GameEngine - Попытка игрока: 333 | Результат: 0Б 0К
+2026-04-21 16:35:24 [main] INFO  com.game.GameEngine - Попытка игрока: 333 | Результат: 0Б 0К
+2026-04-21 16:35:25 [main] INFO  com.game.GameEngine - Попытка игрока: 333 | Результат: 0Б 0К
+2026-04-21 16:35:26 [main] INFO  com.game.GameEngine - Попытка игрока: 333 | Результат: 0Б 0К
+2026-04-21 16:35:27 [main] INFO  com.game.GameEngine - Попытка игрока: 333 | Результат: 0Б 0К
+2026-04-21 16:35:28 [main] INFO  com.game.GameEngine - Попытка игрока: 333 | Результат: 0Б 0К
+2026-04-21 16:35:29 [main] INFO  com.game.GameEngine - Попытка игрока: 333 | Результат: 0Б 0К
+2026-04-21 16:35:29 [main] INFO  com.game.GameEngine - Попытка игрока: 333 | Результат: 0Б 0К
+2026-04-21 16:35:30 [main] INFO  com.game.GameEngine - Попытка игрока: 333 | Результат: 0Б 0К
+2026-04-21 16:35:30 [main] INFO  com.game.Main - ПРОИГРЫШ. Попытки исчерпаны. Было задумано: 956
