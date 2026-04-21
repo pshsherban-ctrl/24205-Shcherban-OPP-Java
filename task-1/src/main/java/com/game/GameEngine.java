@@ -1,40 +1,33 @@
- 
 package com.game;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import java.util.*;
-import java.util.logging.*;
 
-//Класс, отвечающий за логику игры
 public class GameEngine {
-    private static final Logger LOGGER = Logger.getLogger(GameEngine.class.getName());
+    private static final Logger logger = LoggerFactory.getLogger(GameEngine.class);
+    private final String secret;            
+    private final int length;
 
-    static {
-        try {
-            FileHandler fh = new FileHandler("game.log", true);
-            fh.setFormatter(new SimpleFormatter());
-            LOGGER.addHandler(fh);
-        } catch (Exception e) {
-            System.err.println("Не удалось создать файл лога.");
-        }
+    public GameEngine(int length) {
+        this.length = length;
+        this.secret = generateSecret(length);
+        logger.debug("Сгенерирован секрет: {}", secret); 
     }
-
-    // Генерирует секретное число с неповторяющимися цифрами. @param length длина числа, @return строка с числом
-    public String generateSecret(int length) {
+    //генерация секретного числа
+    private String generateSecret(int len) {
         List<Integer> digits = new ArrayList<>();
         for (int i = 0; i <= 9; i++) digits.add(i);
         Collections.shuffle(digits);
         
         StringBuilder sb = new StringBuilder();
-        for (int i = 0; i < length; i++) {
+        for (int i = 0; i < len; i++) {
             sb.append(digits.get(i));
         }
-        String secret = sb.toString();
-        LOGGER.info("Сгенерировано секретное число: " + secret);
-        return secret;
+        return sb.toString();
     }
-
-    //Сравнивает попытку пользователя с секретным числом
-    public GameResult calculateResult(String secret, String attempt) {
+    //сравнивает попытку пользователя с секретным числом
+    public GameResult calculateResult(String attempt) {
         int bulls = 0;
         int cows = 0;
 
@@ -47,7 +40,11 @@ public class GameEngine {
                 cows++;
             }
         }
-        LOGGER.info(String.format("Попытка: %s -> Результат: %d быков, %d коров", attempt, bulls, cows));
+        logger.info("Попытка игрока: {} | Результат: {}Б {}К", attempt, bulls, cows);
         return new GameResult(bulls, cows);
+    }
+
+    public String getSecret() {
+        return secret;
     }
 }

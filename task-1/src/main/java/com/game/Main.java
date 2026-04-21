@@ -1,59 +1,60 @@
 package com.game;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import java.util.Scanner;
 
 public class Main {
+    private static final Logger logger = LoggerFactory.getLogger(Main.class);
     private static final int TIME_LIMIT_SECONDS = 20;
     private static final int MAX_ATTEMPTS = 10;
 
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        GameEngine engine = new GameEngine();
-
+        
         System.out.println("--- Игра Быки и Коровы ---");
-        System.out.print("Выберите длину числа (3-6): ");
+        System.out.print("Выберите длину последовательности (3-6): ");
         int length = scanner.nextInt();
-        scanner.nextLine(); // очистка буфера
+        scanner.nextLine();
 
-        String secret = engine.generateSecret(length);
-        int attemptsLeft = MAX_ATTEMPTS;
-        boolean won = false;
+        GameEngine engine = new GameEngine(length);
+        int attempts = 0;
+        boolean isGuessed = false;
 
-        System.out.println("Число загадано! У вас " + MAX_ATTEMPTS + " попыток.");
-        System.out.println("На каждый ход дается " + TIME_LIMIT_SECONDS + " секунд.");
+        logger.info("Начало новой сессии. Длина: {}, Лимит попыток: {}", length, MAX_ATTEMPTS);
 
-        while (attemptsLeft > 0) {
-            System.out.printf("\nПопыток осталось: %d. Ваш ход: ", attemptsLeft);
+        while (attempts < MAX_ATTEMPTS) {
+            attempts++;
+            System.out.printf("[%d/%d] Введите ваш вариант: ", attempts, MAX_ATTEMPTS);
             
-            long startTime = System.currentTimeMillis();
-            String attempt = scanner.nextLine();
-            long endTime = System.currentTimeMillis();
+            long start = System.currentTimeMillis();
+            String input = scanner.nextLine();
+            long duration = (System.currentTimeMillis() - start) / 1000;
 
-            if ((endTime - startTime) / 1000 > TIME_LIMIT_SECONDS) {
-                System.out.println("Время вышло! Попытка потеряна.");
-                attemptsLeft--;
+            if (duration > TIME_LIMIT_SECONDS) {
+                logger.warn("Попытка отклонена: превышен лимит времени ({} сек)", duration);
                 continue;
             }
 
-            if (attempt.length() != length || !attempt.matches("\\d+")) {
-                System.out.println("Ошибка: введите " + length + " цифр.");
+            if (input.length() != length || !input.matches("\\d+")) {
+                System.out.println("Ошибка! Введите ровно " + length + " цифр.");
+                attempts--; // Не засчитываем некорректный ввод
                 continue;
             }
 
-            GameResult result = engine.calculateResult(secret, attempt);
-            System.out.println("Результат: " + result);
+            GameResult result = engine.calculateResult(input);
+            System.out.println("-> " + result);
 
             if (result.bulls() == length) {
-                won = true;
+                isGuessed = true;
                 break;
             }
-            attemptsLeft--;
         }
 
-        if (won) {
-            System.out.println("Вы победили.");
+        if (isGuessed) {
+            logger.info("ПОБЕДА! Число угадано за {} попыток.", attempts);
         } else {
-            System.out.println("Игра окончена. Было загадано: " + secret);
+            logger.info("ПРОИГРЫШ. Попытки исчерпаны. Было задумано: {}", engine.getSecret());
         }
     }
-} 
+}

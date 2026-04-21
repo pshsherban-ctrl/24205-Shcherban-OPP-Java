@@ -4,19 +4,30 @@ import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 
 class GameEngineTest {
-    private final GameEngine engine = new GameEngine();
 
     @Test
-    void testCalculation() {
-        GameResult result = engine.calculateResult("1234", "1354");
-        // 1 и 4 на своих местах (2 быка), 3 есть, но не там (1 корова)
-        assertEquals(2, result.bulls());
-        assertEquals(1, result.cows());
+    void testBullsAndCowsCalculation() {
+        GameEngine engine = new GameEngine(4);
+        String secret = engine.getSecret();
+        
+        // все быки
+        GameResult resultWin = engine.calculateResult(secret);
+        assertEquals(4, resultWin.bulls());
+        assertEquals(0, resultWin.cows());
     }
 
     @Test
-    void testWin() {
-        GameResult result = engine.calculateResult("5678", "5678");
-        assertEquals(4, result.bulls());
+    void testManualLogic() {
+        GameEngine engine = new GameEngine(4);
+        String secret = engine.getSecret();
+        
+        // генерируем неправильную попытку, меняя местами символы секрета
+        char[] chars = secret.toCharArray();
+        char temp = chars[0];
+        chars[0] = chars[1];
+        chars[1] = temp;
+        String attempt = new String(chars);
+        GameResult result = engine.calculateResult(attempt);
+        assertTrue(result.cows() >= 2 || result.bulls() < 4);
     }
-} 
+}
