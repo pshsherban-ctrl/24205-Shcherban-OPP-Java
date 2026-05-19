@@ -26,7 +26,6 @@ public class CommandFactory {
                 if (className.isEmpty() || className.startsWith("#")) continue;
                 
                 try {
-                    // Загружаем класс по его полному имени calculator.commands.PushCommand
                     Class<?> clazz = Class.forName(className);
                     registerCommand(clazz);
                 } catch (ClassNotFoundException e) {

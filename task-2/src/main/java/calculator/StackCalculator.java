@@ -34,6 +34,13 @@ public class StackCalculator {
     }
 
     public static void main(String[] args) {
+        //
+        Logger rootLogger = LogManager.getLogManager().getLogger("");
+        rootLogger.setLevel(Level.WARNING);
+        for (Handler handler : rootLogger.getHandlers()) {
+            handler.setLevel(Level.WARNING);
+        }
+        //
         StackCalculator calc = new StackCalculator();
         try {
             InputStream is = (args.length > 0) ? new FileInputStream(args[0]) : System.in;
