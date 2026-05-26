@@ -8,4 +8,4 @@ public class ExecutionContext {
 
     public Deque<Double> getStack() { return stack; }
     public Map<String, Double> getParameters() { return parameters; }
-} 
+}
