@@ -36,30 +36,25 @@ public class FactoryFrame extends JFrame {
         this.dealers = dealers;
 
         setTitle("Factory Emulator");
-        setSize(450, 500);
+        setSize(450, 700);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         setResizable(false);
 
-        // Главная панель для кастомной отрисовки без единого символа текста
         JPanel canvas = new JPanel() {
             @Override
             protected void paintComponent(Graphics g) {
                 super.paintComponent(g);
                 Graphics2D g2 = (Graphics2D) g;
 
-                // Задний фон панели
                 g2.setColor(Color.DARK_GRAY);
                 g2.fillRect(0, 0, getWidth(), getHeight());
 
-                // Рисуем 4 индикатора складов (Кузова, Моторы, Компоненты, Автомобили)
-                // Серый — пустой склад, цветной — заполненность
                 drawPureBar(g2, 30, 40, bodyStorage.size(), bodyStorage.getCapacity(), Color.CYAN);
                 drawPureBar(g2, 30, 100, motorStorage.size(), motorStorage.getCapacity(), Color.ORANGE);
                 drawPureBar(g2, 30, 160, accessoryStorage.size(), accessoryStorage.getCapacity(), Color.MAGENTA);
                 drawPureBar(g2, 30, 220, autoStorage.size(), autoStorage.getCapacity(), Color.GREEN);
 
-                // Нижний блок: Очередь задач ThreadPool
-                // Масштабируем высоту полосы в зависимости от размера очереди
+
                 g2.setColor(Color.LIGHT_GRAY);
                 g2.fillRect(30, 400, 390, 20);
                 int queueSize = Math.min(threadPool.getTaskCount(), 100);
@@ -69,11 +64,9 @@ public class FactoryFrame extends JFrame {
             }
 
             private void drawPureBar(Graphics2D g, int x, int y, int current, int max, Color color) {
-                // Рамка (серый контейнер склада)
                 g.setColor(Color.GRAY);
                 g.fillRect(x, y, 390, 30);
 
-                // Заполнение склада
                 if (max > 0) {
                     g.setColor(color);
                     int fillWidth = (int) (((double) current / max) * 390);
@@ -82,23 +75,22 @@ public class FactoryFrame extends JFrame {
             }
         };
 
-        // Панель управления скоростями (Ползунки)
+        // Ползунки
         JPanel slidersPanel = new JPanel(new GridLayout(4, 1, 0, 5));
         slidersPanel.setBackground(Color.DARK_GRAY);
         slidersPanel.setBorder(BorderFactory.createEmptyBorder(10, 30, 10, 30));
 
-        // Добавляем 4 ползунка. В них нет меток и текста — чистая логика значений.
         slidersPanel.add(createPureSlider(100, 4000, 1000, 1)); // Поставщики кузовов
         slidersPanel.add(createPureSlider(100, 4000, 1000, 2)); // Поставщики моторов
         slidersPanel.add(createPureSlider(100, 4000, 1000, 3)); // Поставщики деталей
         slidersPanel.add(createPureSlider(100, 4000, 1000, 4)); // Дилеры
 
-        // Компонуем окно: сверху ползунки, снизу графический Canvas со складами
+        //сверху ползунки, снизу графический Canvas со складами
         setLayout(new BorderLayout());
         add(slidersPanel, BorderLayout.NORTH);
         add(canvas, BorderLayout.CENTER);
 
-        // Таймер перерисовки графики (10 FPS)
+        // Таймер перерисовки графики 10 FPS
         new Timer(100, e -> canvas.repaint()).start();
 
         setLocationRelativeTo(null);
@@ -108,7 +100,6 @@ public class FactoryFrame extends JFrame {
     private JSlider createPureSlider(int min, int max, int def, int type) {
         JSlider slider = new JSlider(min, max, def);
         slider.setBackground(Color.DARK_GRAY);
-        // КРИТИЧЕСКИ ВАЖНО: Выключаем любые попытки Swing написать цифры на слайдере!
         slider.setPaintLabels(false);
         slider.setPaintTicks(false);
 
