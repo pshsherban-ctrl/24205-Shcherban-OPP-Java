@@ -18,7 +18,7 @@ public class Storage<T> {
         items.add(item);
         notifyAll();
     }
-
+    
     public synchronized T get() throws InterruptedException {
         while (items.isEmpty()) {
             wait();

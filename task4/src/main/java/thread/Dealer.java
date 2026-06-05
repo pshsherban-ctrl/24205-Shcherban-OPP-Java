@@ -2,18 +2,17 @@ package thread;
 
 import model.Auto;
 import model.Storage;
-import java.io.FileWriter;
-import java.io.IOException;
-import java.io.PrintWriter;
-import java.time.LocalTime;
-import java.time.format.DateTimeFormatter;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 public class Dealer extends Thread {
+    // 1. Создаем логгер для текущего класса (slf4j)
+    private static final Logger logger = LoggerFactory.getLogger(Dealer.class);
+    
     private final Storage<Auto> autoStorage;
     private final int id;
     private final boolean logSale;
     private volatile int delay = 1000;
-    private static final DateTimeFormatter dtf = DateTimeFormatter.ofPattern("HH:mm:ss.SSS");
 
     public Dealer(Storage<Auto> autoStorage, int id, boolean logSale) {
         this.autoStorage = autoStorage;
@@ -40,18 +39,12 @@ public class Dealer extends Thread {
         }
     }
 
-    private static synchronized void logPurchase(int dealerId, Auto auto) {
-        try (FileWriter fw = new FileWriter("sales.log", true);
-             PrintWriter pw = new PrintWriter(fw)) {
-            pw.printf("%s: Dealer %d: Auto %d (Body: %d, Motor: %d, Accessory: %d)%n",
-                    LocalTime.now().format(dtf), dealerId, auto.getId(),
-                    auto.getBody().getId(), auto.getMotor().getId(), auto.getAccessory().getId());
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-    }
-
     private void logPurchase(Auto auto) {
-        logPurchase(this.id, auto);
+        logger.info("Dealer {}: Auto {} (Body: {}, Motor: {}, Accessory: {})",
+                this.id, 
+                auto.getId(),
+                auto.getBody().getId(), 
+                auto.getMotor().getId(), 
+                auto.getAccessory().getId());
     }
 }
